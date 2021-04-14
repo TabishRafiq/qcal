@@ -1,0 +1,89 @@
+<body>
+  <meta name='viewport' 
+     content='width=device-width, initial-scale=1.0, maximum-scale=1.0, 
+     user-scalable=0' >
+   <form name="calc">
+        <input type="text" name="input"  id="answer">
+        <div class="grid-container">
+                <input type="button" id="clear" name="clear" value="  C  " onclick="calc.input.value = ''"> 
+                <input type="button" name="two" value="  %  " onclick="calc.input.value += '%'">
+                <input type="button" name="three" value="  ←  " onclick="calc.input.value = calc.input.value.slice(0,-1)">
+                <input type="button" class="operator" name="div" value="  ÷  " onclick="calc.input.value += '/'">
+
+                <input type="button" name="seven" value="  7  " onclick="calc.input.value += '7'">
+                <input type="button" name="eight" value="  8  " onclick="calc.input.value += '8'">
+                <input type="button" name="nine" value="  9  " onclick="calc.input.value += '9'">
+
+                <input type="button" class="operator" name="times" value="  ×  " onclick="calc.input.value += '*'">
+                <input type="button" name="four" value="  4  " onclick="calc.input.value += '4'">
+                <input type="button" name="five" value="  5  " onclick="calc.input.value += '5'">
+                <input type="button" name="six" value="  6  " onclick="calc.input.value += '6'">
+                <input type="button" class="operator" name="minus" value="  -  " onclick="calc.input.value += '-'">
+
+                <input type="button" name="one" value="  1  " onclick="calc.input.value += '1'">
+                <input type="button" name="two" value="  2  " onclick="calc.input.value += '2'">
+                <input type="button" name="three" value="  3  " onclick="calc.input.value += '3'">
+
+
+                <input type="button" class="operator" name="plus" value="  +  " onclick="calc.input.value += '+'">
+                <input type="button" >
+                <input type="button" name="zero" value="  0  " onclick="calc.input.value += '0'">
+                <input type="button" name="doit" value="  .  " onclick="calc.input.value += '.'">
+                <input type="button" class="operator" name="doit" value="  =  " onclick="calc.input.value = eval(calc.input.value)">
+               
+         </div>
+</form>
+</body>
+
+<style>
+  
+  /* add css code*/
+  body{
+    background-color: #ffffff; 
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 70%;
+}
+
+input{
+    outline: 0;
+    border: 0;
+    background-color: #f9f9f9;
+    color: slategrey;
+    font-size: 32px;
+    font-family: Product Sans;
+}
+
+input:active:hover{ 
+  background-color: #e4e4e4;
+}
+
+form{
+padding: 0px;
+margin: 0px;
+}
+
+#answer{
+    padding: 16px;
+    width:100%;
+    height: 30%;
+    background-color: #ffffff;
+    text-align: right;
+    vertical-align: bottom;
+    font-size: 54px;
+    font-weight: 400;
+}
+.operator{
+    color: #0db0c5;
+}
+
+
+</style>
+      
