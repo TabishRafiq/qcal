@@ -29,7 +29,7 @@
                 <input type="button" >
                 <input type="button" name="zero" value="  0  " ontouchend="calc.input.value += '0'">
                 <input type="button" name="doit" value="  .  " ontouchend="calc.input.value += '.'">
-                <input type="button" class="operator" name="doit" value="  =  " ontouchend="calc.input.value = eval(calc.input.value)">
+                <input type="button" class="operator" id="equal" name="doit" value="  =  " ontouchend="calc.input.value = eval(calc.input.value)">
                
          </div>
 </form>
@@ -79,6 +79,10 @@ margin: 0px;
     vertical-align: bottom;
     font-size: 54px;
     font-weight: 400;
+}
+
+#equal{
+    background-color: #0db0c5;
 }
 .operator{
     color: #0db0c5;
