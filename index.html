@@ -5,7 +5,7 @@
    <form name="calc">
         <input type="text" name="input"  id="answer">
         <div class="grid-container">
-                <input type="button" id="clear" name="clear" value="  C  " onclick="calc.input.value = ''"> 
+                <input type="button" id="clear" name="clear" value="  C  " ontouchend="calc.input.value = ''"> 
                 <input type="button" name="two" value="  %  " onclick="calc.input.value += '%'">
                 <input type="button" name="three" value="  ←  " onclick="calc.input.value = calc.input.value.slice(0,-1)">
                 <input type="button" class="operator" name="div" value="  ÷  " onclick="calc.input.value += '/'">
